@@ -13,6 +13,6 @@ class Curso extends Model
     protected $fillable = array("*");
 
     public function estudiantes(){
-        return $this ->belongsToMany(Estudiantes::class, "curso_estudiante");
+        return $this ->belongsToMany(Estudiante::class, "curso_estudiante");
     }
 }
