@@ -35,7 +35,9 @@ class EstudiantesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $inputs = $request->input();
+        $respuesta = Estudiante::create($inputs);
+        return $respuesta;
     }
 
     /**
